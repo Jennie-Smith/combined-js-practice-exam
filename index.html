@@ -42,6 +42,35 @@
 
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <script src="solutions.js"></script>
+<script>
+$(document).ready(function () {
+    $("#bold-btn").click(function (){
+        $(this).css('font-weight','Bold');
+    })
 
+    $("#reload-btn").click(function (){
+        location.reload(true);
+    })
+
+    $(".loud-item").click(function (){
+        alert($(this).text())
+    })
+
+    $(".data-item").hover(
+        function (handlerIn){
+            let dataID = $(this).attr("data-id");
+            $("#data-display").text(dataID)
+        },
+        function (handlerOut){
+        }
+    )
+
+    $("#change-text-btn").click(function (){
+        let input = $("#change-text-input").val();
+        $("#change-text-btn").text(input)
+    })
+
+})
+</script>
 </body>
 </html>

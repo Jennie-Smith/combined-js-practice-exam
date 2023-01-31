@@ -16,7 +16,7 @@ function isBoolean(x) {
     }
 }
 
-// console.log(isBoolean(43))
+console.log(isBoolean(43))
 
 function hasBoolean(array){
     for (let i = 0; i < array.length; i++) {
@@ -30,7 +30,7 @@ function hasBoolean(array){
     }
 }
 
-// console.log(hasBoolean([1, 2, true, 4]))
+console.log(hasBoolean([1, 2, true, 4]))
 
 const people = [ {
     name: "Bob",

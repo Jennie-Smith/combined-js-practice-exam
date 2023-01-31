@@ -25,12 +25,13 @@ function hasBoolean(array){
             // console.log(true)
             return true
         } else {
-            console.log(false)
+            // console.log(false)
         }
     }
+    return false
 }
 
-console.log(hasBoolean([1, 2, true, 4]))
+console.log(hasBoolean([1, 2, 3, 4]))
 
 const people = [ {
     name: "Bob",
